@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>formulario Pre-Matricula</title>
+			<style type="text/css">
+				body{
+					margin: 0%;
+					padding: 0%;
+					text-align: center;
+				}
+				.principal{
+					vertical-align: text-top;
+				
+				}
+        #f1{
+          display: flex;
+          justify-content: space-around;
+          
+        }
+			</style>
+			
+	</head>
+	<body>
+		<div class="principal">
+		<h1>Escola Virtual </h1>
+		<h2>Formulário de Pré-Matrícula </h2>
+		<hr width="600"></hr>
+      <table border="1px" align="center"><tr><td>
+				<p><b> Dados Pessoais:</b></p>
+        <div id="f1">
+					<form name="f1" action="cadastro.1" method="post" >
+						Nome do Aluno:
+							<input type="text" name="nome" size="40"><br>
+						Nascimento (dd/mm/aaaa): 
+							<input type="text" name="dia" size="2"> / <input type="text" name="mes" size="2"> / <input type="text" name="ano" size="4"><br>
+						Nome da Mãe: 
+							<input type="text" name="nameMae" size="40" ><br>
+						Nome do pai:
+							<input type="text" name="namePai" size="40"><br>
+						Telefone: DDD ( 
+							<input type="text" name="telefone" size="2"> )
+						Tel: 
+							<input type="text" name="tel" size="8"> 
+						Ramal:
+							<input type="text" name="ramal" size="5"><br>
+						E-mail:
+							<input type="text" name="email" size="30"><br><br>
+					</form>
+        </div>  
+			</td></tr>
+			<tr><td>
+					<table border="2" width="600" >
+						<p><b>Informações de Matrícula:</b></p>					
+							<tr><td valign="top"><p>Série:</p> 
+								<select name="series">
+									<option value="Pre-Escola" select="Pre-Escola">Pré-Escolar</option>
+									<option value="1a serie 1o grau" select="1a serie 1o grau">1a série 1o grau</option>
+									<option value="2a serie 1o grau" select="2a serie 1o grau">2a série 1o grau</option>
+									<option value="3a serie 1o grau" select="3a serie 1o grau">3a série 1o grau</option>
+									<option value="4a serie 1o grau" select="4a serie 1o grau">4a série 1o grau</option>
+									<option value="5a serie 1o grau" select="5a serie 1o grau">5a série 1o grau</option>
+									<option value="6a serie 1o grau" select="6a serie 1o grau">6a série 1o grau</option>
+									<option value="7a serie 1o grau" select="7a serie 1o grau">7a série 1o grau</option>
+									<option value="8a serie 1o grau" select="8a serie 1o grau">8a série 1o grau</option>
+									<option value="1a serie 2o grau" select="1a serie 2o grau">1a série 2o grau</option>
+									<option value="2a serie 2o grau" select="2a serie 2o grau">2a série 2o grau</option>
+									<option value="3a serie 2o grau" select="3a serie 2o grau">3a série 2o grau</option>
+								</select>
+								</td>
+								<td valign="top"><p>Turno:</p>
+									<form name="f3" action="cadastro.3" method="post">
+										<input type="radio" name="turno" value="manha"> Manhã<br>
+										<input type="radio" name="turno" value="tarde"> Tarde<br>
+									</form>
+								</td>
+								<td valign="top"><p>Atividades Extracurriculares:</p>
+									<form name="f4" action="cadastro.4" method="post">
+										<input type="checkbox" name="Atividade" value="Informatica">Informática<br>
+										<input type="checkbox" name="Atividade" value="Musica">Música<br>
+										<input type="checkbox" name="Atividade" value="ballet">Ballet<br>
+										<input type="checkbox" name="Atividade" value="Pintura">Pintura<br>
+										<input type="checkbox" name="Atividade" value="Judo">Judo<br>
+										<input type="checkbox" name="Atividade" value="Futebol">Futebol<br>
+									</form>
+								</td></table></tr>
+					</table>
+			</td></tr>	
+		</table>
+		</div><br>
+		<form name="f5" action="cadastro.5" method="post" >
+			<input type="submit" name="enviar" value="Enviar Formulário">
+			<input type="reset" name="reset" value="Limpa Campos">
+		</form>
+	</div >			
+	</body>
+
+
+</html>
